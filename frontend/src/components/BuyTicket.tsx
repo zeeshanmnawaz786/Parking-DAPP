@@ -66,8 +66,37 @@ export const BuyTicket: FC = () => {
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
           setStartTime(new Date(e.target.value).getTime() / 1000);
           handleUnixTimeChange(e);
+        
         }}
       />
+
+
+
+
+      {/* <ZoneSelect zone={zone} setZone={setZone} />
+<TextField
+  style={style}
+  label="Start Time"
+  variant="outlined"
+  type="datetime-local"
+  value={new Date(startTime * 1000).toISOString().slice(0, -1)}
+  onChange={(e: ChangeEvent<HTMLInputElement>) => {
+    setStartTime(new Date(e.target.value).getTime() / 1000);
+    handleUnixTimeChange(e);
+  }}
+/> */}
+
+
+
+
+
+
+
+
+
+
+
+      
       <TextField
         style={style}
         label="Price (in Wei):"
