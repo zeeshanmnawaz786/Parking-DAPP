@@ -56,7 +56,8 @@ export const BuyTicket: FC = () => {
         onChange={(e) => setDuration(parseInt(e.target.value))}
         inputProps={{ min: "1" }}
       />
-      <ZoneSelect zone={zone} setZone={setZone} />
+
+      {/* <ZoneSelect zone={zone} setZone={setZone} />
       <TextField
         style={style}
         label="Start Time"
@@ -66,37 +67,22 @@ export const BuyTicket: FC = () => {
         onChange={(e: ChangeEvent<HTMLInputElement>) => {
           setStartTime(new Date(e.target.value).getTime() / 1000);
           handleUnixTimeChange(e);
-        
+        }}
+      /> */}
+
+      <ZoneSelect zone={zone} setZone={setZone} />
+      <TextField
+        style={style}
+        label="Start Time"
+        variant="outlined"
+        type="datetime-local"
+        value={new Date(startTime * 1000).toISOString().slice(0, -8)}
+        onChange={(e: ChangeEvent<HTMLInputElement>) => {
+          setStartTime(new Date(e.target.value).getTime() / 1000);
+          handleUnixTimeChange(e);
         }}
       />
 
-
-
-
-      {/* <ZoneSelect zone={zone} setZone={setZone} />
-<TextField
-  style={style}
-  label="Start Time"
-  variant="outlined"
-  type="datetime-local"
-  value={new Date(startTime * 1000).toISOString().slice(0, -1)}
-  onChange={(e: ChangeEvent<HTMLInputElement>) => {
-    setStartTime(new Date(e.target.value).getTime() / 1000);
-    handleUnixTimeChange(e);
-  }}
-/> */}
-
-
-
-
-
-
-
-
-
-
-
-      
       <TextField
         style={style}
         label="Price (in Wei):"
