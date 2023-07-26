@@ -13,7 +13,7 @@ The project contains two parts. First one is a solidity contract that handles al
 
 ## Project structure
 
-The project is split into two folders ([hardhat](hardhat) and [frontend](frontend)). Hardhat folder contains the contract and everything needed to test, compile and deploy the contract. Frontend folder contains the React app that allows interacting with the deployed contract. Each of the folders contain README with instructions to install dependencies and run the project.
+The project is split into two folders ([hardhat](hardhat) and [frontend](frontend)). The Hardhat folder contains the contract and everything needed to test, compile and deploy the contract. The Frontend folder contains the React app that allows interaction with the deployed contract. Each of the folders contains README with instructions to install dependencies and run the project.
 
 ```
 .
@@ -27,7 +27,7 @@ The project is split into two folders ([hardhat](hardhat) and [frontend](fronten
     ├── hardhat/
     │   ├── contracts/ (folder with contracts)
     │   ├── deploy/ (folder with files needed for deploying contract)
-    │   ├── test/ (folder with files needed for testing contract)
+    │   ├── test/ (folder with files needed for a testing contract)
     │   ├── .env.example (example environment file)
     │   ├── README.md
     │   └── ...
